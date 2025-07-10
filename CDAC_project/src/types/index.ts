@@ -5,6 +5,7 @@ export interface User {
   sharingCode: string;
   createdAt: string;
   updatedAt: string;
+  token?: string;
 }
 
 export interface AuthState {
@@ -31,7 +32,6 @@ export interface Asset {
   assetType: AssetType;
   url: string;
   thumbnailUrl?: string;
-  uploadedBy: User | string;
   sharedWith: string[];
   createdAt: string;
   updatedAt: string;
